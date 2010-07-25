@@ -199,7 +199,8 @@ public class MemcachedClient {
 	public static final int MARKER_BYTEARR          = 4096;
 	public static final int F_COMPRESSED            = 2;
 	public static final int F_SERIALIZED            = 8;
-	
+	public static final int MARKER_UNKNOWN          = 0;//temporary for kestrel support by ikeike443 2010.07.25
+
 	// flags
 	private boolean sanitizeKeys;
 	private boolean primitiveAsString;

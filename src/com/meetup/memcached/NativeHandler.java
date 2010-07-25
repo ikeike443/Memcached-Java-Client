@@ -357,6 +357,10 @@ public class NativeHandler {
 		if ( ( flag & MemcachedClient.MARKER_BYTEARR ) == MemcachedClient.MARKER_BYTEARR )
 			return decodeByteArr( b );
 		
+        //temporary for kestrel support by ikeike443 2010.07.25
+        if ( ( flag & MemcachedClient.MARKER_UNKNOWN ) == MemcachedClient.MARKER_UNKNOWN )
+            return decodeByteArr( b );
+
 		return null;
 	}
 	
